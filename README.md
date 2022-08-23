@@ -28,8 +28,8 @@ int main(int argc, char **argv)
 This header has two functions (they're void so it should be fine convention wise) which are fairly simple.
 
 ```c
-void num_args(int no, int argc)
-void args_type(char **argv, int argc, ...)
+void num_args(int no, int argc);
+void args_type(char **argv, int argc, ...);
 ```
 
 Just note that the first argument of args_type is argv and not argc, this is because the va_start function expects the final argument to be length.
